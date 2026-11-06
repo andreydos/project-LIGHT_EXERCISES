@@ -210,15 +210,16 @@
   text-decoration: underline;
 }
 
-.footer-meta-copy {
+.footer-meta-side {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .footer-year {
-  text-align: left;
+  text-align: right;
+  white-space: nowrap;
 }
 
 @media only screen and (min-width: 768px) {
@@ -335,5 +336,11 @@
   .footer-subscribe {
     flex-shrink: 0;
     margin-top: 0;
+  }
+
+  .footer-year {
+    width: 350px;
+    flex-shrink: 0;
+    text-align: left;
   }
 }
